@@ -1,0 +1,528 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color:#edf2fc;
+  --secondary-color:#212121;
+}
+
+.dark-theme{
+  --primary-color:#000106;
+  --secondary-color:#fff;
+}
+
+#dark-icon{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 10px; 
+}
+
+
+#first-section {
+  /* width: 100%; */
+  height: 100vh;
+  /* background-image: url(./img/backbeach.jfif); */
+  background:var(--primary-color);
+  padding-bottom: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3.3rem 0px 3.6rem;
+}
+
+.navbar .logo h1 {
+  color: var(--secondary-color);
+}
+
+#block {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  font-size: 1.5em;
+  color: var(--secondary-color);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: rgb(156, 111, 57);
+}
+
+
+
+
+.clock{
+  border:none;
+  width: 400px;
+  height: 300px;
+  /* background-image: url(./img/carim1.webp); */
+  /* background-color: #e1b2ac; */
+  background:var(--primary-color);
+  position: absolute;
+  margin: 250px 0px 0px 550px; 
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+
+
+.clock .time{
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.clock .time h3{
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+#showtime{
+  padding: 10px 20px 10px 20px;
+  border: none;
+  background-color: #cc7d72;
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-family:monospace;
+  font-weight: 900;
+}
+
+
+
+/* text animation start */
+ 
+ .text-animation{
+  text-align: center;
+  padding-top: 120px;
+ }
+
+ .tittle-word{
+  animation: color-animation 2s linear infinite;
+ }
+
+ .tittle-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.tittle-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.tittle-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.tittle-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+
+@keyframes color-animation {
+  0% {color:var(--color-1)}
+  32%{color:var(--color-1)}
+  33%{color:var(--color-2)}
+  65%{color:var(--color-2)}
+  66%{color:var(--color-3)}
+  99%{color:var(--color-3)}
+  100%{color:var(--color-1)}
+}
+
+.tittle{
+  text-transform: uppercase;
+  font-family:fantasy;
+  font-size: 50px;
+  word-spacing: 4px;
+}
+
+
+
+
+
+
+/* text animation end */
+
+/* first end */
+
+/* second start */
+
+
+
+#second {
+  /* background-color: darkgray; */
+  background:var(--primary-color);
+  padding: 100px 0px 100px 0px;
+}
+
+.fi-img,
+.se-img,
+.th-img,
+.fo-img {
+  width : 300px;
+  height : 300px;
+}
+
+#second h2 {
+  color: aliceblue;
+  font-size: 45px;
+  text-align: center;
+}
+
+#slider {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#slider .first,
+.second,
+.third,
+.fourth {
+  width: 300px;
+  text-align: center;
+}
+
+#slider h4 {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(218, 230, 240);
+}
+
+#slider p {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(230, 222, 222);
+}
+
+/* end */
+
+/* start */
+
+#img-change {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 60px;
+  column-gap: 60px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: antiquewhite; */
+  background:var(--primary-color);
+  padding: 100px 100px;
+}
+
+#img-change div img {
+  height: 400px;
+  width: 500px;
+}
+
+/* img change end  */
+
+/* sign up start */
+
+#signup{
+  width: 100%;
+  height: 100%;
+  /* background-color: beige; */
+  background:var(--primary-color);
+  padding: 100px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+.signbtn{
+  padding: 20px;
+  border-style: none;
+  background-color: rgb(225, 175, 138);
+  width: 150px;
+  height: 60px;
+  border-radius: 40px;
+  font-size: 20px;
+  font-family: fantasy;
+  color:rgb(183, 125, 49);
+  box-shadow:2px 2px 10px 10px red ;
+}
+
+/* sign up end */
+
+/* faq start */
+/* body container */
+.faq{
+  padding: 50px;
+  /* background-color: rgb(68, 84, 78); */
+  background:var(--primary-color);
+}
+
+.faq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faq h1{
+  text-align: center;
+  font-size: 50px;
+  margin: 1rem;
+  color: #989595;
+}
+
+.accordian{
+  margin-top: 0.5rem;
+  width: 85%;
+}
+
+/* box */
+.accordian-item{
+  background-color:rgb(129, 64, 64);
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 10px 0 rgba(115, 66, 66, 0.5);
+}
+
+/* box header */
+.accordian-item-header{
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  font-weight: 800;
+  color: rgb(218, 126, 126);
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+/* for Content + */
+.accordian-item-header::after{
+  content: "+";  
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+
+.accordian-item-header.active::after {
+content: "-";
+}
+ 
+/* after hover */
+.accordian-item-header.active + .accordian-item-down{
+display: block;
+}
+
+/* text block */
+.accordian-item-down {
+padding: 1rem;
+line-height: 1.5rem;
+color: #e1b2ac;
+border-top: 2px solid;
+border-image: linear-gradient(to right, rgb(202, 58, 58), rgb(99, 46, 46))1;
+display: none;
+
+}
+ 
+
+
+
+
+/* img hover start */
+
+
+#imghover{
+  /* background-color: #989595; */
+  background:var(--primary-color);
+  height: 100%;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* for container of 3 card */
+.container-hover{
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content:space-between;
+}
+ 
+/* for 3 card */
+.container-hover .card{
+  position: relative;
+  /* background-color: #989595; */
+  background:var(--primary-color);
+  border: none;
+}
+
+.container-hover .card .face{
+   width: 300px;                    /* for all img and text  */
+  height: 240px;
+  transition: 0.5s;
+  background-color: #989595;
+  
+}
+
+/* before hower effect of img and heading container */
+.container-hover .card .face.face1{
+  position:relative;
+  background-color:#989595;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(70px);
+  transition: all 2s;
+}
+
+/* after hower effect of img and heading container */
+.container-hover .card:hover .face.face1{
+  transform: translateY(0px);
+  transition: all 2s;
+  background-color: rgb(212, 116, 116);
+}
+
+
+/* for img ontainer box  */
+.container-hover .card .face.face1 .content{
+  opacity: 0.2;
+  transition: all 2s;
+}
+
+/* for img ontainer box hover */
+.container-hover .card:hover .face.face1 .content{
+ opacity: 1;
+ transition: all 2s;
+}
+ /* for img inside box */
+.container-hover .card .face.face1 .content img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* for heading text */
+.container-hover .card .face.face1 .content h3{
+  margin: 10px 0 0 ;
+  padding: 0;
+  text-align: center;
+  color: rgb(204, 90, 90);
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+
+
+
+
+
+
+ .container-hover .card .face.face2{                 /* for read more btn and paragraph */
+  position: relative;
+  background-color:rgb(80, 59, 59);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 50px rgb(0,0,0,0.8);
+  transform: translateY(-100px);
+  transition: all 2s;
+}
+
+/* for paragraph and read btn container */
+.container-hover .card:hover .face.face2{
+  transform: translateY(0);
+  transition: all 2s;
+}
+
+
+/* for paragraph */
+.container-hover .card .face.face2 .content p {
+  margin: 0px;
+  padding: 0px;
+  color:rgb(217, 44, 44);
+}
+
+/* for read btn */
+.container-hover .card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+
+  text-decoration: none;
+  font-weight: 900;
+  color:  rgb(220, 46, 46);
+  padding: 5px;
+  border: 1px solid pink;
+
+}
+
+/* for text and read btn */
+.container-hover .card .face.face2 .content a:hover{          
+  background-color:#cc7d72;
+  color: blanchedalmond;
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+

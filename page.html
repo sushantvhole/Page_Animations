@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>travel Agency</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="page.css">
+</head>
+
+<body>
+
+    <section id="first-section">
+        <navbar class="navbar">
+            <div class="logo">
+                <h1>Travel Agency</h1>
+            </div>
+            <div class="menu">
+                <ul class="nav-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Sign Up</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <img id="dark-icon" src="./img/moon.png" alt="">
+                </ul>
+            </div>
+
+            <div id="block">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </navbar>
+
+        <div class="clock" data-aos="flip-down" data-aos-duration="2000">
+            <button id="showtime" onclick="time()">Show time</button>
+            <div class="time">
+                <h3 id="say"></h3>
+                <h3 id="time"></h3>
+                <h3 id="date"></h3>
+                <h3 id="day"></h3>
+            </div>
+        </div>
+
+
+        <div class="text-animation">
+            <h2 class="tittle">
+                <span class="tittle-word tittle-word-1">Explore</span>
+                <span class="tittle-word tittle-word-2">The</span>
+                <span class="tittle-word tittle-word-3">World</span>
+                <span class="tittle-word tittle-word-4">With Us</span>
+            </h2>
+        </div>
+
+
+
+        <!-- text animation -->
+        <!-- <div class="text-animation">
+             <div class="wrapper">
+                 <div class="static-text">Our Destination is</div>
+                     <ul class="dynamic-text">
+                         <li><span>GOA</span></li>
+                         <li><span>CHENNAI</span></li>
+                         <li><span>HYDERABAD</span></li>
+                         <li><span>MUMBAI</span></li>
+     
+                     </ul>
+             </div>
+            </div> -->
+
+
+
+        <!-- text animation end -->
+    </section>
+
+
+
+
+
+    <!-- first end -->
+
+    <!-- second-start -->
+
+    <section id="second" data-aos="flip-up" data-aos-duration="3000" data-aos-offset="300">
+        <h2>Our Destination</h2>
+        <div id="slider">
+            <div class="first">
+                <img class="fi-img" src="./img/goa.jpg" alt="" data-aos="fade-right" data-aos-duration="3000"
+                    data-aos-offset="400"> <br><br>
+                <h4>GOA</h4> <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia rem quidem nulla possimus
+                    aspernatur modi reiciendis voluptatum, dolor omnis atque.</p>
+            </div>
+            <div class="second">
+                <img class="se-img" src="./img/chennai.jpg" alt="" data-aos="fade-right" data-aos-duration="3000"
+                    data-aos-offset="400"> <br><br>
+                <h4>CHENNAI</h4> <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia rem quidem nulla possimus
+                    aspernatur modi reiciendis voluptatum, dolor omnis atque.</p>
+            </div>
+            <div class="third">
+                <img class="th-img" src="./img/hyderabad.webp" alt="" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-offset="400"> <br><br>
+                <h4>HYDERABAD</h4> <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia rem quidem nulla possimus
+                    aspernatur modi reiciendis voluptatum, dolor omnis atque.</p>
+            </div>
+            <div class="fourth">
+                <img class="fo-img" src="./img/mumbai.webp" alt="" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-offset="400"> <br><br>
+                <h4>MUMBAI</h4> <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia rem quidem nulla possimus
+                    aspernatur modi reiciendis voluptatum, dolor omnis atque.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="img-change" data-aos="flip-up" data-aos-duration="3000" data-aos-offset="300">
+        <div data-aos="flip-up" data-aos-duration="3000" data-aos-offset="400">
+            <img id="img1" src="./img/chennai.jpg" alt="">
+        </div>
+        <div data-aos="flip-down" data-aos-duration="3000" data-aos-offset="400">
+            <img id="img2" src="./img/goa.jpg" alt="">
+        </div>
+        <div data-aos="flip-left" data-aos-duration="3000" data-aos-offset="300">
+            <img id="img3" src="./img/hyderabad.webp" alt="">
+        </div>
+        <div data-aos="flip-right" data-aos-duration="3000" data-aos-offset="300">
+            <img id="img4" src="./img/mumbai.webp" alt="">
+        </div>
+
+    </section>
+
+    <!-- section end -->
+
+    <!-- signup  start -->
+
+    <section id="signup">
+        <button class="signbtn" data-aos="zoom-out" data-aos-duration="3000" data-aos-offset="300">Sign Up</button>
+
+
+        <!-- form -->
+
+        <div class="container pe-3 bg-light w-50 mt-5" data-aos="zoom-in" data-aos-duration="3000"
+            data-aos-offset="400">
+            <h1 class="text-center text-primary"> Sign Up</h1>
+            <form id="form">
+                <!-- name -->
+                <div class="mb-3 w-auto pt-3">
+                    <label class="form-label">Name :</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your Name" />
+                </div>
+                <!-- email -->
+                <div class="mb-3 w-auto ">
+                    <label class="form-label">Email Id: :</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your Email" />
+                </div>
+                <!-- password -->
+                <div class="mb-3 w-auto">
+                    <label class="form-label">Password :</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Your Password" />
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="mb-3 w-auto">
+                    <label class="form-label">Confirm Password :</label>
+                    <input type="password" class="form-control" id="confirm" placeholder="Enter Your Confirm Password">
+                </div>
+
+
+                <!-- mobile number -->
+                <div class="mb-3 w-auto">
+                    <label class="form-label">Mobile Number :</label>
+                    <input type="number" class="form-control" id="number" placeholder="Enter Your Mobile Number" />
+                </div>
+
+
+                <button type="submit" class="btn btn-primary mb-3" id="submit" name="submit"
+                    value="submit">Submit</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="faq">
+        <h1>Faq</h1>
+        <div class="accordian" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="300">
+            <div class="accordian-item">
+                <div class="accordian-item-header">
+                    Travel Agencies
+                </div>
+                <div class="accordian-item-down">
+                    <div class="accordian-item-cont">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat possimus minus, culpa
+                        reiciendis unde necessitatibus ab rem totam quisquam, facere consequatur voluptatem laudantium
+                        cum excepturi similique officia odit. Rerum magni soluta debitis neque repellendus quidem optio
+                        aliquam, atque quia autem! Impedit quibusdam dicta nemo consectetur quasi modi excepturi tempore
+                        ipsa.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordian" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="100">
+            <div class="accordian-item">
+                <div class="accordian-item-header">
+                    Activities
+                </div>
+                <div class="accordian-item-down">
+                    <div class="accordian-item-cont">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat possimus minus, culpa
+                        reiciendis unde necessitatibus ab rem totam quisquam, facere consequatur voluptatem laudantium
+                        cum excepturi similique officia odit. Rerum magni soluta debitis neque repellendus quidem optio
+                        aliquam, atque quia autem! Impedit quibusdam dicta nemo consectetur quasi modi excepturi tempore
+                        ipsa.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordian" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="200">
+            <div class="accordian-item">
+                <div class="accordian-item-header">
+                    Transport
+                </div>
+                <div class="accordian-item-down">
+                    <div class="accordian-item-cont">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat possimus minus, culpa
+                        reiciendis unde necessitatibus ab rem totam quisquam, facere consequatur voluptatem laudantium
+                        cum excepturi similique officia odit. Rerum magni soluta debitis neque repellendus quidem optio
+                        aliquam, atque quia autem! Impedit quibusdam dicta nemo consectetur quasi modi excepturi tempore
+                        ipsa.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordian" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="100">
+            <div class="accordian-item">
+                <div class="accordian-item-header">
+                    Tripping In formation
+                </div>
+                <div class="accordian-item-down">
+                    <div class="accordian-item-cont">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat possimus minus, culpa
+                        reiciendis unde necessitatibus ab rem totam quisquam, facere consequatur voluptatem laudantium
+                        cum excepturi similique officia odit. Rerum magni soluta debitis neque repellendus quidem optio
+                        aliquam, atque quia autem! Impedit quibusdam dicta nemo consectetur quasi modi excepturi tempore
+                        ipsa.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="imghover" data-aos="flip-down" data-aos-duration="3000" data-aos-offset="200">
+        <div class="container-hover" data-aos="flip-up" data-aos-duration="3000" data-aos-offset="400">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./img/activity.png" alt="">
+                        <h3>Activity</h3>
+                    </div>
+
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eaque voluptate tempore
+                            adipisci recusandae voluptas et magni, nulla optio beatae architecto modi corporis rerum
+                            eius!
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./img/private guide.png" alt="">
+                        <h3> Guide</h3>
+                    </div>
+
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eaque voluptate tempore
+                            adipisci recusandae voluptas et magni, nulla optio beatae architecto modi corporis rerum
+                            eius!
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./img/location manager.png" alt="">
+                        <h3>Location</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eaque voluptate tempore
+                            adipisci
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eaque voluptate tempore
+                            adipisci
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="page.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
